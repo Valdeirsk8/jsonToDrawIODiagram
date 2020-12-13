@@ -69,9 +69,9 @@ Draw.loadPlugin(function(ui) {
     var graph = ui.editor.graph;
 
     // Extends Extras menu
-    mxResources.parse('fromSql=From SQL');
+    mxResources.parse('fromSq2=From SQL2');
 
-    var wnd = new mxWindow(mxResources.get('fromSql'), div, document.body.offsetWidth - 480, 140,
+    var wnd = new mxWindow(mxResources.get('fromSql2'), div, document.body.offsetWidth - 480, 140,
         320, 300, true, true);
     wnd.destroyOnClose = false;
     wnd.setMaximizable(false);
@@ -620,7 +620,7 @@ Draw.loadPlugin(function(ui) {
     div.appendChild(btn);
 
     // Adds action
-    ui.actions.addAction('fromSql', function() {
+    ui.actions.addAction('fromSql2', function() {
         wnd.setVisible(!wnd.isVisible());
 
         if (wnd.isVisible()) {
@@ -634,6 +634,6 @@ Draw.loadPlugin(function(ui) {
     theMenu.funct = function(menu, parent) {
         oldMenu.apply(this, arguments);
 
-        ui.menus.addMenuItems(menu, ['fromSql'], parent);
+        ui.menus.addMenuItems(menu, ['fromSql2'], parent);
     };
 });
