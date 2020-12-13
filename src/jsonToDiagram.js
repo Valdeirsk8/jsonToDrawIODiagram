@@ -69,7 +69,7 @@ Draw.loadPlugin(function(ui) {
     var graph = ui.editor.graph;
 
     // Extends Extras menu
-    mxResources.parse('fromSq2=From SQL2');
+    mxResources.parse('fromSql2=From SQL2');
 
     var wnd = new mxWindow(mxResources.get('fromSql2'), div, document.body.offsetWidth - 480, 140,
         320, 300, true, true);
